@@ -3,7 +3,7 @@
 I built this as part of my learning journey with HTML, CSS and JavaScript.It's a simple registration form with proper validation so users actually
 get helpful feedback instead of just a broken form.
 
-🔗 [Live Demo](https://JyotiBhattarai.github.io/Form-Validation)
+🔗 [Live Demo] https://github.com/JyotiBhattarai/Form-Validation
 
 ## What it does
 
