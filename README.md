@@ -29,4 +29,4 @@ Download the files and open index.html in your browser. That's it.
 ## Author
 
 Jyoti Bhattarai
-- GitHub: [@JyotiBhattarai](https://github.com/JyotiBhattarai)
+- GitHub: https://github.com/JyotiBhattarai
