@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Page</h1>
+        <p>Please Register to continue</p>
+
+        <form id="registrationForm" novalidate>
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" maxlength="20"
+                       aria-describedby="usernameError" autocomplete="off">
+                <div class="hint" id="usernameHint">3-20 characters, letters/numbers/underscore, must start with a letter</div>
+                <span class="error-message" id="usernameError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" aria-describedby="emailError" autocomplete="off">
+                <span class="error-message" id="emailError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="text" id="contact" name="contact" maxlength="10" inputmode="numeric"
+                       aria-describedby="contactError" autocomplete="off">
+                <span class="error-message" id="contactError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="password" aria-describedby="passwordError" autocomplete="off">
+                    <button type="button" class="toggle-password" data-target="password" aria-label="Show password">👁</button>
+                </div>
+                <div class="hint">Min 8 characters, include one special character (!@#$%^&*)</div>
+                <span class="error-message" id="passwordError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <div class="password-wrapper">
+                    <input type="password" id="confirmPassword" name="confirmPassword" aria-describedby="confirmPasswordError" autocomplete="off">
+                    <button type="button" class="toggle-password" data-target="confirmPassword" aria-label="Show password">👁</button>
+                </div>
+                <span class="error-message" id="confirmPasswordError" role="alert"></span>
+            </div>
+
+            <button type="submit">Register</button>
+
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 420px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 26px;
+}
+
+p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102,126,234,0.15);
+}
+
+input.error-input {
+    border-color: red;
+    background-color: #fff5f5;
+}
+
+input.success-input {
+    border-color: green;
+    background-color: #f5fff5;
+}
+
+.error-message {
+    font-size: 12px;
+    color: red !important;
+    margin-top: 4px;
+    display: none;
+}
+
+.hint {
+    font-size: 11px;
+    color: #999;
+    margin-top: 4px;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+}
+
+.password-wrapper input {
+    padding-right: 40px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #777;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+}
